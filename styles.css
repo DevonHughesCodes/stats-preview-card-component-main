@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparen-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120vh;
+    height: 47vh;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 8px;
+}
+
+.container .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0;
+    padding-left: 70px;
+}
+
+.container h1 {
+    color: var(--White);
+    font-size: 34px;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.container h1 span {
+    color: var(--soft-violet);
+}
+
+.container p {
+    color: var(--slightly-transparent-white);
+    font-size: 15px;
+    margin-top: 0;
+    padding-right: 80px;
+    line-height: 1.6rem;
+}
+
+.stats-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    width: 344px;
+}
+
+.container .stat {
+    display: flex;
+    flex-direction: column;
+    color: var(--slightly-transparen-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.container .stat span {
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding-bottom: 5px;
+}
+
+.container .right-box img {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 47vh;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.container .right-box {
+    position: relative; 
+}
+
+.container .right-box::after {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-violet); 
+    opacity: 50%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    color: var(--slightly-transparen-white);
+}
+
+.attribution a {
+    color: var(--soft-violet);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container .left-box {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container h1 {
+        color: var(--White);
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .container p {
+        display: flex;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+    }
+
+    .container .stats-box {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        margin-bottom: -1rem;
+    }
+
+    .container .stat {
+        padding-bottom: 2rem;
+    }
+
+    .container .right-box {
+        margin-bottom: -150px;
+    }
+
+    .container .right-box {
+        width: 100%;
+        order: -1;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .right-box img {
+        width: 100%;
+        max-height: 200px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0;
+    }
+
+    .container .right-box::after {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0;
+        max-height: 62.7%;
+    }
+
+    .attribution {
+        font-size: 12px;
+        text-align: center;
+        color: var(--slightly-transparen-white);
+    }
+    
+    .attribution a {
+        color: var(--soft-violet);
+    }
+}
