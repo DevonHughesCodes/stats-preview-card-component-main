@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ([https://your-solution-url.com](https://github.com/DevonHughesCodes/stats-preview-card-component-main))
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/DevonHughesCodes/stats-preview-card-component-main))
+- Live Site URL: (https://devonhughescodes.github.io/stats-preview-card-component-main/)
 
 ### Built with
 
